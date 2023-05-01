@@ -1,0 +1,48 @@
+name: Bug Report 🪲
+description: File a report on any problem. 
+title: "[When I enter the Trading room of the Tangleship...]: "
+labels: ["bug"]
+assignees:
+  - PilotTobi
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to improve the TangleSwap experience for everyone!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: e.g. explorer@example.com, twitter.com/TangleExplorer
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen? You can include screenshots, if needed.
+      placeholder: Tell us what you see!
+      value: |
+        I was expecting Y, but instead Y happened!
+
+        Steps to reproduce the behavior.
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error / website crash
+
+        I have attached a screenshot to illustrate the problem. 
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Chrome
+        - Metamask
+        - Brave
+        - Safari
+        - Firefox
+        - Edge

@@ -1,0 +1,37 @@
+name: Feature Request 💡
+description: Suggest an interesting idea.
+title: "[Add more black stars to the Tangleship's background]: "
+labels: ["enhancement"]
+assignees:
+  - PilotTobi
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for taking the time to improve the TangleSwap experience for everyone!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: e.g. explorer@example.com, twitter.com/TangleExplorer
+    validations:
+      required: false
+  - type: textarea
+    id: problem-related
+    attributes:
+      label: Is your feature request related to a problem? If so, please describe.
+      description: You can include screenshots, if needed.
+      placeholder: Tell us about the problem or bug!
+      value: N/A
+    validations:
+      required: false
+  - type: textarea
+    id: feature-describe
+    attributes:
+      label: Describe the solution you'd like
+      description: Also describe any alternatives you may have considered.
+      placeholder: >
+        I love the stars in the background of your website, it really makes me feel as if it is a window into the deep space void
+        and I am watching them from inside the Tangleship. However, I think you should add more of the black stars!
+    validations:
+      required: true
